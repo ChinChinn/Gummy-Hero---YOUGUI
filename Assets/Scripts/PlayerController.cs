@@ -5,33 +5,37 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    #region Fields
-
-    [Header ( "Character Details" )]
-    [Space]
-    public GameObject losePanel;
-
-    public Text healthDisplay;
-
     public float speed;
     private float input;
-
     Rigidbody2D rb;
-    Animator anim;
-    AudioSource source;
-
-    public int health;
-
-    #endregion
-    // Start is called before the first frame update
-    void Start()
-    {
-        source = GetComponent<AudioSource>();
+    Animator anim; 
+    void Start() {
+        rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    private void Update() {
+        if (input != 0)
+        {
+            anim.SetBool("isRunning", true);
+        }else {
+            anim.SetBool("isRunning", false);
+        }
+
+        if (input > 0 )
+        {
+            transform.eulerAngles = new Vector3(0,0,0);
+        }else if (input < 0)
+        {
+            transform.eulerAngles = new Vector3(0, 180, 0);
+        }
+    }
+
+    void FixedUpdate() {
+        input = Input.GetAxis("Horizontal");
         
+        rb.velocity = new Vector2(input * speed, rb.velocity.y);
     }
+
+
 }
