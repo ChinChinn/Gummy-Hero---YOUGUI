@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     public float speed;
+    public int health;
     private float input;
     Rigidbody2D rb;
     Animator anim; 
@@ -38,4 +39,12 @@ public class PlayerController : MonoBehaviour
     }
 
 
+    public void takeDamage(int damage){
+        health -= damage;
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
+
+    }
 }
