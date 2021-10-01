@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6976800894985231523}
   - component: {fileID: 6976800894985231522}
+  - component: {fileID: 1719475559965338159}
   m_Layer: 0
   m_Name: RightHand
   m_TagString: Untagged
@@ -81,6 +82,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &1719475559965338159
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6976800894985231520}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00000011920929, y: -0.124199934}
+  m_Size: {x: 0.25999996, y: 0.45999998}
+  m_Direction: 0
 --- !u!1 &6976800895002277081
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,6 +108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6976800895002277080}
   - component: {fileID: 6976800895002277083}
+  - component: {fileID: 7400039598504612087}
   m_Layer: 0
   m_Name: LeftArm
   m_TagString: Untagged
@@ -163,6 +181,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &7400039598504612087
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6976800895002277081}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.12419997}
+  m_Size: {x: 0.26, y: 0.46}
+  m_Direction: 0
 --- !u!1 &6976800895443149170
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,6 +288,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6976800895723244201}
   - component: {fileID: 6976800895723244200}
+  - component: {fileID: 8036793843202637343}
   m_Layer: 0
   m_Name: LeftFoot
   m_TagString: Untagged
@@ -325,6 +360,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &8036793843202637343
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6976800895723244214}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.11879996}
+  m_Size: {x: 0.28, y: 0.44}
+  m_Direction: 0
 --- !u!1 &6976800896040570832
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,6 +386,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6976800896040570835}
   - component: {fileID: 6512549682120248253}
+  - component: {fileID: 8905395556508315598}
+  - component: {fileID: 2034297480079235498}
   m_Layer: 0
   m_Name: Gummy
   m_TagString: Untagged
@@ -378,6 +431,43 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &8905395556508315598
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6976800896040570832}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!70 &2034297480079235498
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6976800896040570832}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.06}
+  m_Size: {x: 1.2, y: 1.4}
+  m_Direction: 0
 --- !u!1 &6976800896091985574
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,6 +478,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6976800896091985561}
   - component: {fileID: 6976800896091985560}
+  - component: {fileID: 6484515714190337428}
   m_Layer: 0
   m_Name: LeftHand
   m_TagString: Untagged
@@ -459,6 +550,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &6484515714190337428
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6976800896091985574}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.12419997}
+  m_Size: {x: 0.26, y: 0.46}
+  m_Direction: 0
 --- !u!1 &6976800896204303160
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,6 +657,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6976800896268488775}
   - component: {fileID: 6976800896268488774}
+  - component: {fileID: 937439116630910034}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -625,6 +733,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &937439116630910034
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6976800896268488772}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.64
 --- !u!1 &6976800896811049620
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,6 +759,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6976800896811049623}
   - component: {fileID: 6976800896811049622}
+  - component: {fileID: 3875908886738571561}
   m_Layer: 0
   m_Name: RightFoot
   m_TagString: Untagged
@@ -706,6 +831,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &3875908886738571561
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6976800896811049620}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.11879996}
+  m_Size: {x: 0.28, y: 0.44}
+  m_Direction: 0
 --- !u!1 &6976800896974292941
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,6 +857,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6976800896974292940}
   - component: {fileID: 6976800896974292943}
+  - component: {fileID: 3585112469178780173}
   m_Layer: 0
   m_Name: RightArm
   m_TagString: Untagged
@@ -788,3 +930,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &3585112469178780173
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6976800896974292941}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.12419997}
+  m_Size: {x: 0.26, y: 0.46}
+  m_Direction: 0
