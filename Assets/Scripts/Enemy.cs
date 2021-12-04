@@ -13,6 +13,9 @@ public class Enemy : MonoBehaviour
 
     public int damage;
 
+    public GameObject explosion;
+    public GameObject explosion2;
+
     PlayerControler  playerScript;
 
     // Start is called before the first frame update
@@ -33,10 +36,12 @@ public class Enemy : MonoBehaviour
         if (other.tag == "Player"){
             print("We HIT the Jugador");
             playerScript.TakeDamage(damage);
+            Instantiate(explosion2, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
         
         if(other.tag == "Ground"){
+            Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }
