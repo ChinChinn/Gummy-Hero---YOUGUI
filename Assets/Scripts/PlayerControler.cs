@@ -10,14 +10,34 @@ public class PlayerControler : MonoBehaviour
     public int health;
 
     Rigidbody2D rb;
+
+    Animator anim;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
    
     void Update()
     {
+        if(input == 0){
+            //Idle
+            anim.SetBool("IsRunning" , false);
+        }
+        else{
+            //El jugador se esta moviendo reproduce run
+            anim.SetBool("IsRunning" , true);
+            }
+
+        if (input  > 0){
+            transform.eulerAngles = new Vector3(0,0,0);
+        }
+        else if(input < 0) {
+            transform.eulerAngles = new Vector3(0,180,0);
+
+        }
         
     }
 
