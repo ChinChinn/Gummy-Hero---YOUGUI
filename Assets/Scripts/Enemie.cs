@@ -7,7 +7,8 @@ public class Enemie : MonoBehaviour
     public float minSpeed;
     public float maxSpeed;
     float speed; 
-    public int damage; 
+    public int damage;
+    public GameObject explosion; 
     PlayerController playerScript;
     void Start()
     {
@@ -25,10 +26,12 @@ public class Enemie : MonoBehaviour
         if (other.tag == "Player"){
             print("We HIT the Jugador");
             playerScript.TakeDamage(damage);
+            Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
 
         if(other.tag == "Ground"){
+            Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
 

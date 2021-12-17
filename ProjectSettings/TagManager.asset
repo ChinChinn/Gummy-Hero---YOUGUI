@@ -14,7 +14,7 @@ TagManager:
   - UI
   - Ground
   - Player
-  - 
+  - Bg
   - 
   - 
   - 
@@ -39,6 +39,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Bg
+    uniqueID: 1748471097
+    locked: 0
   - name: Ground
     uniqueID: 3096445713
     locked: 0
