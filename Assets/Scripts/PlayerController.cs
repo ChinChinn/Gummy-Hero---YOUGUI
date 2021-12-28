@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     public float speed; 
     private float input;
 
+    public int health;
+
     Rigidbody2D rb;
 
     // Start is called before the first frame update
@@ -25,6 +27,15 @@ public class PlayerController : MonoBehaviour
         input = Input.GetAxis("Horizontal");
         Debug.Log(input);
         rb.velocity = new Vector2(input * speed, rb.velocity.y);
+    }
+
+    public void TakeDamage(int damageAmount){
+        health -= damageAmount;
+
+        if(health <= 0){
+            Destroy(gameObject);
+        }
+        
     }
 
 }
