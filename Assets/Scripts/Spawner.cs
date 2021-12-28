@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spwnaer : MonoBehaviour
+public class Spawner : MonoBehaviour
 {
     public Transform[] spawnPoints;
     public GameObject[] hazards;
