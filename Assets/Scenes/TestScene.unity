@@ -6813,6 +6813,7 @@ MonoBehaviour:
   - {fileID: 870707829}
   hazards:
   - {fileID: 728131107679425719, guid: 01504815fcb6e0849b3bae887033f5f0, type: 3}
+  - {fileID: 7983956868051069848, guid: 783d733d5efb5464fb94698748012eb4, type: 3}
   startTimeBtwSpawns: 2
   minTimBtwSpawns: 0.5
   decrease: 0.1
