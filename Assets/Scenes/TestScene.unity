@@ -6799,11 +6799,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 931904fc0f09b06489ce77d9d804a3fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoints: []
-  hazards: []
-  startTimeBtwSpawns: 0
-  decrease: 0
-  player: {fileID: 0}
+  spawnPoints:
+  - {fileID: 356932264}
+  - {fileID: 665618305}
+  - {fileID: 874364163}
+  - {fileID: 1050285236}
+  - {fileID: 1597296861}
+  - {fileID: 1251783811}
+  - {fileID: 1627563806}
+  - {fileID: 431964126}
+  - {fileID: 2089564117}
+  - {fileID: 1141695689}
+  - {fileID: 870707829}
+  hazards:
+  - {fileID: 728131107679425719, guid: 01504815fcb6e0849b3bae887033f5f0, type: 3}
+  startTimeBtwSpawns: 2
+  minTimBtwSpawns: 0.5
+  decrease: 0.1
+  player: {fileID: 1011512517}
 --- !u!1 &804811272
 GameObject:
   m_ObjectHideFlags: 0

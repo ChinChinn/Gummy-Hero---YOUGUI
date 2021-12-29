@@ -21,10 +21,10 @@ public class Spawner : MonoBehaviour
     void Update()
     {
         if(player != null){
-            if(timeBtwSpawns >= 0){
+            if(timeBtwSpawns <= 0){
                 Transform randomSpawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
                 GameObject randomHazard = hazards[0];
-                Instantiate(randomHazard, randomSpawnPoint, position, Quaternion.identity);
+                Instantiate(randomHazard, randomSpawnPoint.position, Quaternion.identity);
 
                 if(startTimeBtwSpawns > minTimBtwSpawns){
                     startTimeBtwSpawns -= decrease;
