@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed; 
+    public float speed;
+    public float startDashTime;
+    private float dashTime;
+    public float extraSpeed;
+    private bool isDashing;
     private float input;
 
     public int health; 
@@ -34,6 +38,20 @@ public class PlayerController : MonoBehaviour
         }else if (input < 0){
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
+
+        if(Input.GetKeyDown(KeyCode.Space) && isDashing == false){
+            speed += extraSpeed;
+            isDashing = true;
+            dashTime = startDashTime;
+        }
+
+        if (dashTime <= 0 && isDashing == true){
+            isDashing = false;
+            speed -= extraSpeed;
+        } else {
+            dashTime -= Time.deltaTime;
+        }
+
     }
 
     private void FixedUpdate() {
