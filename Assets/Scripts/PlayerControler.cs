@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class PlayerControler : MonoBehaviour
 {
+
+    public Text healthDisplay;
     public float speed;
 
     public float startDashTime;
@@ -20,11 +24,13 @@ public class PlayerControler : MonoBehaviour
 
     Animator anim;
 
-    void Start()
+    private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         
         anim = GetComponent<Animator>();
+
+        healthDisplay.text = health.ToString();
     }
 
    
@@ -60,7 +66,7 @@ public class PlayerControler : MonoBehaviour
         }else{
             dashTime -=Time.deltaTime;
         }
-        
+        //healthDisplay.text = health.ToString();
     }
 
     private void FixedUpdate() {
@@ -72,9 +78,9 @@ public class PlayerControler : MonoBehaviour
 
     public void TakeDamage(int damageAmount){
         health -= damageAmount;
-
+        healthDisplay.text = health.ToString();
         if(health <= 0){
-            
+            healthDisplay.text = "0";
             Destroy(gameObject);
         }
     }
