@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1959780583570164067}
   - component: {fileID: 1959780583570164076}
-  - component: {fileID: 5799174578472976657}
+  - component: {fileID: 2634654666334539450}
   m_Layer: 0
   m_Name: Left Hand
   m_TagString: Untagged
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &5799174578472976657
+--- !u!70 &2634654666334539450
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,8 +96,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.000000029802322, y: -0.12419997}
-  m_Size: {x: 0.25999996, y: 0.45999995}
+  m_Offset: {x: 0, y: -0.12419999}
+  m_Size: {x: 0.26000002, y: 0.46000007}
   m_Direction: 0
 --- !u!1 &1959780583577831772
 GameObject:
@@ -109,7 +109,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1959780583577831773}
   - component: {fileID: 1959780583577831774}
-  - component: {fileID: 4566207195553811748}
+  - component: {fileID: 1218719954620326630}
   m_Layer: 0
   m_Name: Right Hand
   m_TagString: Untagged
@@ -182,7 +182,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &4566207195553811748
+--- !u!70 &1218719954620326630
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -195,7 +195,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.000000059604645, y: -0.1242}
+  m_Offset: {x: 0.0000000018507238, y: -0.12419999}
   m_Size: {x: 0.26000002, y: 0.46000007}
   m_Direction: 0
 --- !u!1 &1959780583607490388
@@ -208,7 +208,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1959780583607490389}
   - component: {fileID: 1959780583607490390}
-  - component: {fileID: 6454887486984510431}
+  - component: {fileID: 813978994913828381}
   m_Layer: 0
   m_Name: Right Foot
   m_TagString: Untagged
@@ -281,7 +281,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &6454887486984510431
+--- !u!70 &813978994913828381
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -294,8 +294,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.11879995}
-  m_Size: {x: 0.27999997, y: 0.43999994}
+  m_Offset: {x: 0, y: -0.11879996}
+  m_Size: {x: 0.28, y: 0.44}
   m_Direction: 0
 --- !u!1 &1959780583792383386
 GameObject:
@@ -307,7 +307,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1959780583792383387}
   - component: {fileID: 1959780583792383364}
-  - component: {fileID: 4863129933954349080}
+  - component: {fileID: 7337252982750325295}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -384,7 +384,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &4863129933954349080
+--- !u!58 &7337252982750325295
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -410,7 +410,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1959780583933470518}
   - component: {fileID: 1959780583933470519}
-  - component: {fileID: 1279304415789262536}
+  - component: {fileID: 8260320090521275306}
   m_Layer: 0
   m_Name: Left Arm
   m_TagString: Untagged
@@ -484,7 +484,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &1279304415789262536
+--- !u!70 &8260320090521275306
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -497,8 +497,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.000000014901161, y: -0.12419999}
-  m_Size: {x: 0.25999996, y: 0.45999995}
+  m_Offset: {x: 0, y: -0.12419997}
+  m_Size: {x: 0.26, y: 0.46}
   m_Direction: 0
 --- !u!1 &1959780584081180041
 GameObject:
@@ -592,7 +592,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1959780584154559715}
   - component: {fileID: 1959780584154559724}
-  - component: {fileID: 754514175544666738}
+  - component: {fileID: 7726721292801139586}
   m_Layer: 0
   m_Name: 'Left Foot '
   m_TagString: Untagged
@@ -665,7 +665,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &754514175544666738
+--- !u!70 &7726721292801139586
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -678,8 +678,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.11879998}
-  m_Size: {x: 0.28000003, y: 0.44000006}
+  m_Offset: {x: 0, y: -0.11879996}
+  m_Size: {x: 0.28, y: 0.44}
   m_Direction: 0
 --- !u!1 &1959780584157483916
 GameObject:
@@ -693,7 +693,7 @@ GameObject:
   - component: {fileID: 9072934354809578935}
   - component: {fileID: 8020424574134409195}
   - component: {fileID: 2741756695677381363}
-  - component: {fileID: 2006374216637384804}
+  - component: {fileID: 4731387678187351599}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -730,6 +730,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6bc4fbf4adf6cc439f3b31cb0959e2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  losePanel: {fileID: 0}
+  healthDisplay: {fileID: 0}
   speed: 0
   health: 0
 --- !u!95 &8020424574134409195
@@ -771,8 +773,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!70 &2006374216637384804
+  m_Constraints: 0
+--- !u!70 &4731387678187351599
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -785,7 +787,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.011, y: -0.07}
+  m_Offset: {x: 0, y: -0.06}
   m_Size: {x: 1.2, y: 1.4}
   m_Direction: 0
 --- !u!1 &1959780584250366828
@@ -798,7 +800,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1959780584250366829}
   - component: {fileID: 1959780584250366830}
-  - component: {fileID: 3261044569670365955}
+  - component: {fileID: 4796614823440834711}
   m_Layer: 0
   m_Name: Right Arm
   m_TagString: Untagged
@@ -872,7 +874,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &3261044569670365955
+--- !u!70 &4796614823440834711
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -885,7 +887,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.12419997}
+  m_Offset: {x: 0.000000029802322, y: -0.12420021}
   m_Size: {x: 0.26, y: 0.46}
   m_Direction: 0
 --- !u!1 &1959780584396937027
