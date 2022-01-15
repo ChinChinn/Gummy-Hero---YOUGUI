@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     private float dashTime;
     public float extraSpeed;
     private bool isDashing;
-    private float input;
+    private float input; 
 
     public int health; 
     Rigidbody2D rb;
