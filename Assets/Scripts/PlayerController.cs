@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
 
     public Text healthDisplay;
+    public Text coinDisplay;
     public float speed;
     public float startDashTime;
     private float dashTime;
@@ -15,6 +16,7 @@ public class PlayerController : MonoBehaviour
     private float input; 
 
     public int health; 
+    public int coins;
     Rigidbody2D rb;
     Animator anim;
 
@@ -24,6 +26,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         healthDisplay.text = health.ToString();
+        coinDisplay.text = coins.ToString();
     }
 
     // Update is called once per frame
@@ -71,6 +74,11 @@ public class PlayerController : MonoBehaviour
             healthDisplay.text = "0"; 
             Destroy(gameObject);
         }
+    }
+
+    public void GainCoins(int value){
+        coins += value;
+        coinDisplay.text = coins.ToString();
     }
 
 }

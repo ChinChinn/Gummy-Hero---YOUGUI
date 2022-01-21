@@ -99,6 +99,8 @@ MonoBehaviour:
   minSpeed: 15
   maxSpeed: 25
   damage: 2
+  explosion: {fileID: 6237012857554080119, guid: e558fdbc66722094da8441a9f631a026,
+    type: 3}
 --- !u!58 &2611112386959139098
 CircleCollider2D:
   m_ObjectHideFlags: 0

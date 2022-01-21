@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3513778216387585309}
   - component: {fileID: 3513778216387585308}
-  - component: {fileID: 3513778216387585306}
   - component: {fileID: 3513778216387585307}
   - component: {fileID: 5436232408030783094}
+  - component: {fileID: 4671650128907366477}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -85,23 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3513778216387585306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3513778216387585311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65b7ad5da14b9e47b365ed50522960f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minSpeed: 15
-  maxSpeed: 25
-  damage: -1
-  explosion: {fileID: 6237012857554080119, guid: e558fdbc66722094da8441a9f631a026,
-    type: 3}
 --- !u!58 &3513778216387585307
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -137,3 +120,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4671650128907366477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3513778216387585311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04ce28e588ad5574a93bffe36f90519f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSpeed: 5
+  maxSpeed: 10
+  points: 1
+  explosion: {fileID: 6237012857554080119, guid: d9f97963dc23eaa48bcafe49b2be178d,
+    type: 3}

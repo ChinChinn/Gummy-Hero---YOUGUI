@@ -6220,6 +6220,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9072934354809578935, guid: 17acf53707978744292b7915195fe9fc,
         type: 3}
+      propertyPath: coinDisplay
+      value: 
+      objectReference: {fileID: 1538578402}
+    - target: {fileID: 9072934354809578935, guid: 17acf53707978744292b7915195fe9fc,
+        type: 3}
       propertyPath: healthDisplay
       value: 
       objectReference: {fileID: 1215696080}
