@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class CoinMovement1 : MonoBehaviour
 {
 
     public float minspeed;
@@ -11,11 +11,12 @@ public class Enemy : MonoBehaviour
 
     float speed;
 
-    public int damage;
+    //public int Points;
 
     public GameObject explosion;
     public GameObject explosion2;
 
+  
     PlayerControler  playerScript;
 
     // Start is called before the first frame update
@@ -33,12 +34,21 @@ public class Enemy : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other){
-        if (other.tag == "Player"){
+
+           if (other.tag == "Player"){
             print("We HIT the Jugador");
-            playerScript.TakeDamage(damage);
             Instantiate(explosion2, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
-      
+        
+        if(other.tag == "Ground"){
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
     }
 }
+
+
+
+
+
