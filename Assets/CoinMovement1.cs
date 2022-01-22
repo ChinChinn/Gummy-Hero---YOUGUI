@@ -8,7 +8,7 @@ public class CoinMovement1 : MonoBehaviour
     public float minspeed;
     public float maxSpeed;
 
-
+    public int Points;
     float speed;
 
     //public int Points;
@@ -37,6 +37,7 @@ public class CoinMovement1 : MonoBehaviour
 
            if (other.tag == "Player"){
             print("We HIT the Jugador");
+            playerScript.addPoints(Points);
             Instantiate(explosion2, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }

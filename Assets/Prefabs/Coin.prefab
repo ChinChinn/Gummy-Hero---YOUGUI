@@ -114,6 +114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minspeed: 2
   maxSpeed: 5
+  Points: 2
   explosion: {fileID: 6316786219995674545, guid: c80003a588e778c4e929072c13f4d9de,
     type: 3}
   explosion2: {fileID: 7094633427637469706, guid: 73dbfbf4ab3581a429e5f320b1220d56,

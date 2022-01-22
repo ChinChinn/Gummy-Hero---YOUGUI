@@ -8,6 +8,7 @@ public class PlayerControler : MonoBehaviour
 {
 
     public Text healthDisplay;
+    public Text coinDisplay;
     public float speed;
 
     public float startDashTime;
@@ -17,8 +18,11 @@ public class PlayerControler : MonoBehaviour
 
     private bool isDashing;
 
+
     private float input;
     public int health;
+
+    public int Coin;
 
     Rigidbody2D rb;
 
@@ -31,6 +35,7 @@ public class PlayerControler : MonoBehaviour
         anim = GetComponent<Animator>();
 
         healthDisplay.text = health.ToString();
+        coinDisplay.text = Coin.ToString();
     }
 
    
@@ -83,6 +88,11 @@ public class PlayerControler : MonoBehaviour
             healthDisplay.text = "0";
             Destroy(gameObject);
         }
+    }
+
+    public void addPoints(int pointsAmount){
+        Coin += pointsAmount;
+        coinDisplay.text = Coin.ToString();
     }
 }
 
