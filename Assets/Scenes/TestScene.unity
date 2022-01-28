@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1462,7 +1462,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1486,7 +1486,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 368080444}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.325275, y: 10.368551, z: -10}
+  m_LocalPosition: {x: 33.95958, y: 10.49, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 552450848}
@@ -2017,7 +2017,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 552450847}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.025276184, y: -5.6685514, z: 0}
+  m_LocalPosition: {x: 0.34041977, y: -5.79, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 126967383}
@@ -2046,7 +2046,7 @@ MonoBehaviour:
   m_Follow: {fileID: 10799}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 8.5
+    OrthographicSize: 10
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -20572,12 +20572,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.2587547, y: 9.353556}
-      - {x: -30.989529, y: 9.978544}
-      - {x: -30.29829, y: -8.555716}
-      - {x: 2.95962, y: -8.704845}
-      - {x: 21.864626, y: -8.597932}
-      - {x: 22.441723, y: 9.578032}
+    - - {x: 20, y: 9}
+      - {x: -30, y: 9}
+      - {x: -30, y: -9}
+      - {x: 20, y: -9}
 --- !u!4 &2000713016
 Transform:
   m_ObjectHideFlags: 0
