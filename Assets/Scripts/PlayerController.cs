@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate() {
         input = Input.GetAxis("Horizontal");
-        Debug.Log(input);
+        //Debug.Log(input);
         rb.velocity = new Vector2(input * speed, rb.velocity.y);
     }
 

@@ -30,7 +30,7 @@ public class Enemie : MonoBehaviour
         }
 
         if(other.tag == "Ground"){
-            CameraShake.Instance.ShakeCamera(5f, 0.1f);
+            CameraShake.Instance.ShakeCamera(3f, 0.1f);
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
