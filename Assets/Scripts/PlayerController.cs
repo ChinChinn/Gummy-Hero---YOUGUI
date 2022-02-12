@@ -13,10 +13,10 @@ public class PlayerController : MonoBehaviour
     private float dashTime;
     public float extraSpeed;
     private bool isDashing;
-    private float input;
+    private float input; 
 
-    public int health;
-    public int coins; 
+    public int health; 
+    public int coins;
     Rigidbody2D rb;
     Animator anim;
 
@@ -27,7 +27,6 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         healthDisplay.text = health.ToString();
         coinDisplay.text = coins.ToString();
-
     }
 
     // Update is called once per frame
@@ -75,6 +74,11 @@ public class PlayerController : MonoBehaviour
             healthDisplay.text = "0"; 
             Destroy(gameObject);
         }
+    }
+
+    public void GainCoins(int value){
+        coins += value;
+        coinDisplay.text = coins.ToString();
     }
 
 }

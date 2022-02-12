@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemie : MonoBehaviour
+public class Coins: MonoBehaviour
 {
     public float minSpeed;
     public float maxSpeed;
     float speed; 
-    public int damage;
+    public int points;
     public GameObject explosion; 
     PlayerController playerScript;
     void Start()
@@ -24,13 +24,12 @@ public class Enemie : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Player"){
-            playerScript.TakeDamage(damage);
+            playerScript.GainCoins(points);
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
 
         if(other.tag == "Ground"){
-            CameraShake.Instance.ShakeCamera(5f, 0.1f);
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
