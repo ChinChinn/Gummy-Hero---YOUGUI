@@ -129,25 +129,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1709686405}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &10795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 10794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a78c9e20cb26174f807691ec86e1084, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthDisplay: {fileID: 0}
-  coinDisplay: {fileID: 0}
-  speed: 10
-  startDashTime: 0.1
-  extraSpeed: 75
-  health: 5
-  Coin: 0
 --- !u!4 &10799 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6976800896040570835, guid: f9001f260e5174a408bce5cc0e98191e,
@@ -18646,6 +18627,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2337311313282327838, guid: f9001f260e5174a408bce5cc0e98191e,
+        type: 3}
+      propertyPath: coinDisplay
+      value: 
+      objectReference: {fileID: 1246095983}
+    - target: {fileID: 2337311313282327838, guid: f9001f260e5174a408bce5cc0e98191e,
+        type: 3}
+      propertyPath: healthDisplay
+      value: 
+      objectReference: {fileID: 213367445}
     - target: {fileID: 6512549682120248253, guid: f9001f260e5174a408bce5cc0e98191e,
         type: 3}
       propertyPath: m_Controller
