@@ -35,14 +35,14 @@ public class Enemy : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other){
         if (other.tag == "Player"){
             print("We HIT the Jugador");
-            CameraShake.Instance.ShakeCamera(3f, 0.8f);
+            CameraShake.Instance.ShakeCamera(3f, 0.1f);
             playerScript.TakeDamage(damage);
             Instantiate(explosion2, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
         
         if(other.tag == "Ground"){
-            CameraShake.Instance.ShakeCamera(3f, 0.5f);
+            CameraShake.Instance.ShakeCamera(3f, 0.1f);
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
