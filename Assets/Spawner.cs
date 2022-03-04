@@ -18,11 +18,15 @@ public class Spawner : MonoBehaviour
 
     public GameObject player;
 
-
+    public GameManager gameManager;
     // Update is called once per frame
+
+    void Start(){
+        gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+    }
     void Update()
     {
-        if(player != null){
+        if(player != null && gameManager.getGameStatus()){
                  if (timeBtwSpawns <= 0) {
                     Transform randomSpawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
                     GameObject randomHazard = hazards[0];
