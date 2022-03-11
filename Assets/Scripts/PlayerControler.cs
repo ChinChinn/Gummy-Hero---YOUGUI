@@ -28,6 +28,8 @@ public class PlayerControler : MonoBehaviour
 
     Animator anim;
 
+    GameManager gameManager;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -36,6 +38,7 @@ public class PlayerControler : MonoBehaviour
 
         healthDisplay.text = health.ToString();
         coinDisplay.text = Coin.ToString();
+        gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
     }
 
    
@@ -76,7 +79,7 @@ public class PlayerControler : MonoBehaviour
 
     private void FixedUpdate() {
         input = Input.GetAxis("Horizontal");
-        Debug.Log("Input =" + input);
+       // Debug.Log("Input =" + input);
         
         rb.velocity = new Vector2 (input * speed, rb.velocity.y);
     }
@@ -86,7 +89,9 @@ public class PlayerControler : MonoBehaviour
         healthDisplay.text = health.ToString();
         if(health <= 0){
             healthDisplay.text = "0";
+            gameManager.gameOver();
             Destroy(gameObject);
+
         }
     }
 
